@@ -1,0 +1,51 @@
+h1{
+    color: blue;
+}
+div{
+    background-color: brown;
+    width: 400px;
+    height: 400px;
+   
+}
+
+.p1{
+    background-color: rgb(19, 236, 12);
+    width: 50%;
+    height: 50%;
+    /* transition: transform 1s ; */
+    
+    
+    
+
+
+}
+div:hover .p1{
+    /* transform: translate(100% , 100%); */
+    animation: circular 2s forwards;
+    background-color: chartreuse;
+   
+}
+
+@keyframes circular{
+
+0%{
+   content: 'about to die';
+}
+
+33%{
+   background-color: coral;
+   transform: translateY(100%);
+
+}
+66%{
+    transform: translate(100% , 100%);
+    background-color: cornflowerblue;
+}
+100%{
+     transform: translateX(100%);
+     background-color: darkseagreen;
+}
+
+
+
+}
